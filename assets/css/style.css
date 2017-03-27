@@ -1,0 +1,35 @@
+body{
+  background:url('../img/healthcare.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Trebuchet MS;
+  text-align: center;
+  padding-top: 60px;
+  padding-right: 0px;
+}
+
+form{
+  display: inline-block;
+  text-align: left;
+}
+
+button{
+  margin: 0 auto;
+  display: block;
+}
+
+.datos-paciente{
+  border: 2px solid black;
+  display: inline-block;
+  margin: 20 px 0 0 20px;
+  padding: 15px;
+}
+.datos-paciente p{
+  margin: 3px 0;
+}
+
+span{
+  font-family: Trebuchet MS;
+  color: red;
+  font-size: 12px;
+}
