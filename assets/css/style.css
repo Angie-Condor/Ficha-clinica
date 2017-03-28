@@ -1,7 +1,9 @@
-body{
-  background:url('../img/healthcare.jpg');
-  background-repeat: no-repeat;
+html{
+  background:url('../img/healthcare.jpg') no-repeat center center fixed #333;
   background-size: cover;
+}
+
+body{
   font-family: Trebuchet MS;
   text-align: center;
   padding-top: 60px;
@@ -18,18 +20,42 @@ button{
   display: block;
 }
 
-.datos-paciente{
-  border: 2px solid black;
-  display: inline-block;
-  margin: 20 px 0 0 20px;
-  padding: 15px;
-}
-.datos-paciente p{
-  margin: 3px 0;
-}
-
 span{
   font-family: Trebuchet MS;
   color: red;
   font-size: 12px;
+  margin-left: 60px;
+}
+
+label{
+  display: inline-block;
+  width: 60px;
+}
+
+#indicacion-obligatorio{
+  font-family: Trebuchet MS;
+  color: red;
+  font-size: 12px;
+  margin-left: 60px;
+}
+
+.color-dato{
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  color: green;
+  font-size: 18px;
+  margin: auto;
+  text-align: left;
+}
+
+#bienvenida{
+  border: 2px solid black;
+  display: inline-block;
+  margin: 20 px 0 0 20px;
+  padding: 15px;
+  text-align: left;
+}
+
+#bienvenida p{
+  margin: 4px 0;
 }

@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets\css\style.css">
-  <link rel="icon" type="image/x-icon" href="assets/img/icono_clinica.png"/>
-  <title>Ficha clínica</title>
-</head>
-<body>
-  <h1>Clínica LAB</h1>
-  <h2>Ficha de Datos</h2>
-  <form id="fichaDatos">
-    <div>
-      <label for="nombre">Nombre:</label>
-      <input type="text" class="input-registro" id="nombre" placeholder="Escribe aquí tu nombre" /><br>
-      <span></span><br><br>
-
-      <label for="apellido">Apellido:</label>
-      <input type="text" class="input-registro" id="apellido" placeholder="Escribe aquí tu apellido" /><br>
-      <span></span><br><br>
-
-      <label for="edad">Edad:</label>
-      <input type="text" class="input-registro" id="edad" placeholder="Ingresa tu edad"/><br>
-      <span></span><br><br>
-
-      <select name="genero" id="genero">
-          <option value="elegir">Elige tu género</option>
-          <option value="femenino">Femenino</option>
-          <option value="masculino">Masculino</option>
-      </select><br><br>
-
-      <label for="ciudad">Ciudad:</label>
-      <input type="text" class="input-registro" id="ciudad" placeholder="Indica tu ciudad" /><br>
-      <span></span><br><br>
-
-      <label for="pais">País:</label>
-      <input type="text" class="input-registro" id="pais" placeholder="Indica tu país" /><br>
-      <span></span><br><br>
-
-    </div>
-  </form>
-  <button id="enviar" type="submit" form="fichaDatos">Enviar Datos</button><br>
-  <div id="imprimir"></div>
-  <script src= "assets\js\app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/icono_clinica.png"/>
+    <title>Formulario de Datos Clínicos</title>
+  </head>
+  <body>
+    <h1>Clínica LAB</h1>
+    <h2>Ficha de Datos</h2>
+    <form id="fichaDatos">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="input-registro" id="nombre" placeholder="Escribe aquí tu nombre"/>
+        <br>
+        <span></span>
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" class="input-registro" id="apellido" placeholder="Escribe aquí tu apellido"/>
+        <br>
+        <span></span>
+        <br><br>
+        <label for="edad">Edad:</label>
+        <input type="text" class="input-registro" id="edad" placeholder="Ingresa tu edad"/>
+        <br>
+        <span></span>
+        <br><br>
+        <label for="genero">Género:</label>
+        <select name="genero" id="genero" class="input-registro">
+            <option value="" hidden="0">Elige tu género</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino">Masculino</option>
+        </select>
+        <br>
+        <span></span>
+        <br><br>
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" class="input-registro" id="ciudad" placeholder="Indica tu ciudad"/>
+        <br>
+        <span></span>
+        <br><br>
+        <label for="pais">País:</label>
+        <input type="text" class="input-registro" id="pais" placeholder="Indica tu país"/>
+        <br>
+        <span></span>
+        <br><br>
+        <button id="enviar" type="submit" form="fichaDatos">Enviar Datos</button>
+        <br>
+      </div>
+    </form>
+    <br>
+    <span id="indicacion"></span>
+    <div id="imprimir"></div>
+    <!-- javascript -->
+    <script src= "assets\js\app.js"></script>
+  </body>
 </html>
